@@ -1,6 +1,6 @@
 {
   "name": "hydrogenjs-framework-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Hydrogen CLI tool",
   "main": "dist/bin/hydrogen.js",
   "bin": {
