@@ -1,0 +1,8 @@
+import { Sample } from '../../models/sample';
+export interface ISampleRepository {
+  findAll(): Promise<Sample[]>;
+  findById(id: number): Promise<Sample | null>;
+  create(sampleData: any): Promise<Sample>;
+  update(id: number, any: any): Promise<Sample | null>;
+  delete(id: number): Promise<void>;
+}

@@ -1,0 +1,26 @@
+import { Model, DataTypes, Sequelize } from 'sequelize';
+import { v4 as uuidv4 } from 'uuid';
+
+export class Sample extends Model {
+  public id!: string; // Change to string for UUID
+
+  public readonly createdAt!: Date;
+  public readonly updatedAt!: Date;
+
+  static initialize(sequelize: Sequelize) {
+    User.init(
+      {
+        id: {
+          type: DataTypes.UUID,
+          defaultValue: uuidv4, // Automatically generate UUIDs
+          primaryKey: true,
+        }
+      },
+      {
+        sequelize,
+        tableName: 'users',
+        timestamps: true,
+      }
+    );
+  }
+}

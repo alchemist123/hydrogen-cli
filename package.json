@@ -1,0 +1,43 @@
+{
+  "name": "hydrogenjs-framework-cli",
+  "version": "1.0.4",
+  "description": "Hydrogen CLI tool",
+  "main": "dist/bin/hydrogen.js",
+  "bin": {
+    "hydrogen": "dist/bin/hydrogen.js"
+  },
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 'src/**/*.txt' dist/src/",
+    "start": "ts-node bin/hydrogen.ts"
+  },
+  "keywords": [
+    "cli",
+    "hydrogen",
+    "framework",
+    "development"
+  ],
+  "dependencies": {
+    "@types/inquirer": "^9.0.7",
+    "chalk": "4.1.2",
+    "commander": "^12.1.0",
+    "copyfiles": "^2.4.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.1.0",
+    "inquirer": "^11.1.0",
+    "pg": "^8.12.0",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.3",
+    "sequelize-typescript": "^2.1.6",
+    "tsyringe": "^4.8.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/fs-extra": "^11.0.0",
+    "@types/node": "^18.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}

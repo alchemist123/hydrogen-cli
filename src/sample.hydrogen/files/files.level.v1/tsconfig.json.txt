@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                          // ECMAScript target version
+    "module": "commonjs",                        // Node.js uses CommonJS
+    "strict": true,                              // Enable all strict type-checking options
+    "esModuleInterop": true,                     // Enable import compatibility with CommonJS
+    "skipLibCheck": true,                        // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,    // Enforce consistent casing in file names
+    "outDir": "./dist",                          // Output directory for compiled files
+    "experimentalDecorators": true,              // Enable decorators
+    "emitDecoratorMetadata": true,               // Enable metadata for dependency injection
+    "moduleResolution": "node"                   // Module resolution strategy
+  },
+  "include": ["src"],                            // Include the source files to be compiled
+  "exclude": ["node_modules"]                    // Exclude unnecessary files
+}

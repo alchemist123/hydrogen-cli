@@ -1,0 +1,12 @@
+import { Request, Response } from 'express';
+import { inject, injectable } from 'tsyringe';
+
+@injectable()
+export class {ClassName}Controller {
+  constructor() {}
+  
+  // Example method - you can modify this as needed
+  public exampleMethod(req: Request, res: Response): void {
+    res.send('Hello from {ClassName}Controller!');
+  }
+}

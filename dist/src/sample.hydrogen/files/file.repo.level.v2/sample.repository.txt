@@ -1,0 +1,33 @@
+import { injectable } from 'tsyringe';
+import { Sample } from '../models/sample';
+import { ISampleRepository } from './interface/sample.repository.interface';
+
+@injectable()
+export class SampleRepository implements ISampleRepository {
+  async findAll(): Promise<Sample[]> {
+    return Sample.findAll();
+  }
+
+  async findById(id: number): Promise<Sample | null> {
+    return Sample.findByPk(id);  
+  }
+
+  async create(sampleData:any): Promise<Sample> {
+    return Sample.create(sampleData);  
+  }
+
+  async update(id: number, sampleData: any): Promise<Sample | null> {
+    const sample = await Sample.findByPk(id);
+    if (sample) {
+      return sample.update(sampleData);  
+    }
+    return null;
+  }
+
+  async delete(id: number): Promise<void> {
+    const sample = await Sample.findByPk(id);
+    if (sample) {
+      await sample.destroy();
+    }
+  }
+}

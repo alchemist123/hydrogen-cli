@@ -1,0 +1,1 @@
+export const srcFolders = ['config','models','repositories'];

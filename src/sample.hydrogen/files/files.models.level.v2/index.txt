@@ -1,0 +1,16 @@
+import { Sequelize } from 'sequelize';
+import { Sample } from './sample';
+// Import other models
+
+const models = [
+  Sample,
+  // Add other models here
+];
+
+// Function to initialize all models
+export function initializeModels(sequelize: Sequelize) {
+  models.forEach(model => model.initialize(sequelize));
+}
+
+// Export models as default
+export default models;

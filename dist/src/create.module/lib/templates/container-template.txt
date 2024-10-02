@@ -1,0 +1,6 @@
+import { container } from 'tsyringe';
+import { {ClassName}Service } from './{ModuleName}.service';
+import { {ClassName}Controller } from './{ModuleName}.controller';
+
+container.register('{ClassName}Service', { useClass: {ClassName}Service });
+container.register('{ClassName}Controller', { useClass: {ClassName}Controller });
