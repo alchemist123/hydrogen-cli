@@ -8,7 +8,7 @@ export class Sample extends Model {
   public readonly updatedAt!: Date;
 
   static initialize(sequelize: Sequelize) {
-    User.init(
+    Sample.init(
       {
         id: {
           type: DataTypes.UUID,

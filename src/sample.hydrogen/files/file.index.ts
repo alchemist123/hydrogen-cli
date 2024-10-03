@@ -2,8 +2,8 @@ const path = require('path');
 
 // Define the structure for the file details
 interface FileDetails {
-    path: string;  // The relative path to the file
-    name: string;  // The file name
+    path: string;
+    name: string; 
 }
 
 // Define the structure for the file index object
