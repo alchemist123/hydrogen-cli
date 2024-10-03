@@ -16,10 +16,10 @@
 You can install the CLI globally using npm:
 
 ```bash
-npm install -g hydrogenjs-framework-cli
+npm install -g hydrogen-fw
 Alternatively, use it without installation via npx:
 ```bash
-npx hydrogenjs-framework-cli
+npx hydrogen-fw
 
 🛠️ Usage
 After installation, you can use the following commands to interact with the CLI:

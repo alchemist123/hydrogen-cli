@@ -1,9 +1,7 @@
-// src/version/display.version.ts
-
 import figlet from 'figlet';
 import chalk from 'chalk';
 
-const version = '1.0.7';
+const version = '1.0.9';
 
 export async function displayVersion(): Promise<void> {
   // Display the title in large ASCII art with green color
